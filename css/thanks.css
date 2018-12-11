@@ -1,0 +1,136 @@
+.b-1 {
+	background-image: -moz-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+}
+.b-1 .b-block {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.b-1-image {
+	display: block;
+	margin: 0 auto 50px;
+}
+.b-1-image img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.b-1 h1 {
+	display: block;
+	font-size: 48px;
+	color: #ffffff;
+	line-height: 1.2;
+	font-family: 'PfHighwaySansPro-Regular';
+}
+
+.b-2 .b-block {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.b-2 h2 {
+	display: block;
+	font-family: 'PfHighwaySansPro-Regular';
+	font-size: 30px;
+	color: rgb(62, 71, 87);
+	line-height: 1.2;
+	margin-bottom: 40px;
+}
+.b-2-list li {
+	display: block;
+	padding: 50px 0;
+	border-bottom: 1px solid rgb(221, 223, 224);
+}
+.b-2-list .li-image {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin-right: 15px;
+	max-width: 350px;
+	width: 100%;
+}
+.b-2-list .li-image img {
+	display: block;
+	max-width: 100%;
+}
+.b-2-list .li-text {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin: 0 15px;
+	width: 100%;
+	max-width: 440px;
+}
+.b-2-list .li-name {
+	display: block;
+	text-align: left;
+	line-height: 1.2;
+	font-family: 'PfHighwaySansPro-Regular';
+	color: rgb(62, 71, 87);
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.b-2-list .li-date {
+	text-align: left;
+	line-height: 1.2;
+	font-family: 'OpenSans-SemiBold';
+	font-size: 14px;
+	color: rgb(62, 71, 87);
+	margin-bottom: 20px;
+}
+.b-2-list .li-text p {
+	display: block;
+	text-align: left;
+	line-height: 1.2;
+	font-size: 18px;
+	color: rgb(62, 71, 87);
+}
+.b-2-list .li-buttons {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	max-width: 255px;
+	width: 100%;
+	margin-left: 70px;
+}
+.b-2-list .li-btn {
+	display: block;
+	background-color: rgb(255, 221, 45);
+	padding: 20px 10px;
+	border-radius: 4px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.b-2-list .li-more {
+	display: inline-block;
+	color: rgb(77, 86, 99);
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	.b-2-list .li-image, .b-2-list .li-text {
+		margin-bottom: 30px;
+	}
+	.b-2-list .li-buttons {
+		display: block;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 767px){
+	.b-2-list .li-image, .b-2-list .li-text {
+		display: block;
+		margin: 0 auto 30px;
+	}
+}

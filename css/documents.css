@@ -1,0 +1,219 @@
+.b-1 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../i/documents-fon.jpg');
+	text-align: left;
+}
+.b-1 .b-block {
+	padding-top: 100px;
+	padding-bottom: 220px;
+}
+.b-1 h1 {
+	display: block;
+	width: 60%;
+	margin-bottom: 20px;
+	font-size: 48px;
+	line-height: 1.2;
+	color: #ffffff;
+	font-family: 'PfHighwaySansPro-Regular';
+}
+.b-1 p {
+	display: block;
+	width: 60%;
+	margin-bottom: 80px;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 1.2;
+}
+.b-1-btn {
+	display: inline-block;
+	background-color: rgb(255, 221, 45);
+	padding: 20px 45px;
+	border-radius: 4px;
+	max-width: 100%;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: #000000;
+}
+.b-1 .nav {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+.b-1 .nav span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 18px;
+	margin-left: 10px;
+	position: relative;
+	font-size: 12px;
+	color: #ffffff;
+}
+.b-1 .nav span a {
+	font-size: 12px;
+	color: #ffffff;
+}
+.b-1 .nav span a:hover {
+	text-decoration: underline;
+}
+.b-1 .nav span:first-child {
+	padding-left: 0;
+	margin-left: 0;
+}
+.b-1 .nav span::before {
+	content: '>';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 11px);
+	font-size: 16px;
+}
+.b-1 .nav span:first-child:before {
+	display: none;
+}
+
+.b-2 .b-block {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.b-2 h2 {
+	display: block;
+	text-align: left;
+	font-family: 'PfHighwaySansPro-Regular';
+	color: rgb(62, 71, 87);
+	font-size: 36px;
+	line-height: 1.2;
+	margin-bottom: 60px;
+}
+.b-2-wrap {
+	position: relative;
+	padding-right: 415px;
+	min-height: 315px;
+	box-sizing: border-box;
+}
+.b-2-list li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: calc(25% - 4px);
+	margin-bottom: 40px;
+}
+.b-2-list li a {
+	display: inline-block;
+}
+.b-2-list li a img {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2-list li a:hover img {
+	-webkit-filter: brightness(2);
+	-moz-filter: brightness(2);
+	-ms-filter: brightness(2);
+	filter: brightness(2);
+}
+.b-2-list li a span {
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	color: rgb(62, 71, 87);
+	line-height: 1.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2-list li a:hover span {
+	font-family: 'OpenSans-SemiBold';
+}
+.b-2 .fix-window {
+	display: block;
+	padding: 30px 24px;
+	width: 255px;
+	box-sizing: border-box;
+	background-image: -moz-linear-gradient( 90deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.b-2 .fix-window .name {
+	color: #ffffff;
+	font-family: 'OpenSans-SemiBold';
+	line-height: 1.2;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.b-2 .fix-window img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 30px;
+}
+.b-2 .fix-window .fix-btn {
+	display: block;
+	width: 100%;
+	background-color: rgb(255, 221, 45);
+	padding: 20px 10px;
+	border-radius: 4px;
+	max-width: 100%;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: #000000;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	.b-1 {
+		background-position: 65%;
+	}
+	.b-2-wrap {
+		padding-right: 300px;
+	}
+	.b-2-list li {
+		width: calc(50% - 4px);
+	}
+}
+@media screen and (max-width: 767px){
+	.b-1 {
+		background-position: center;
+	}
+	.b-1 h1 {
+		width: 100%;
+	}
+	.b-1 p {
+		width: 100%;
+	}
+	.b-1 .nav {
+		left: 10px;
+	}
+	.b-2-wrap {
+		padding-right: 0;
+	}
+	.b-2-list li {
+		display: block;
+		width: 100%;
+	}
+	.b-2-list li a img {
+		margin: 0 auto 20px;
+	}
+	.b-2-list li a span {
+		text-align: center;
+	}
+	.b-2 .fix-window {
+		position: static;
+		margin: 0 auto;
+	}
+}

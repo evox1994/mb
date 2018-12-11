@@ -1,0 +1,549 @@
+.b-1 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../i/akcii-more-fon.jpg');
+	text-align: left;
+}
+.b-1 .b-block {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.b-1 h1 {
+	display: block;
+	width: 50%;
+	margin-bottom: 20px;
+	font-size: 48px;
+	line-height: 1.2;
+	color: #ffffff;
+	font-family: 'PfHighwaySansPro-Regular';
+}
+.b-1 p {
+	display: block;
+	width: 50%;
+	margin-bottom: 80px;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 1.2;
+}
+.b-1-btn {
+	display: inline-block;
+	background-color: rgb(255, 221, 45);
+	padding: 20px 45px;
+	border-radius: 4px;
+	max-width: 100%;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: #000000;
+}
+.b-1 .nav {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+.b-1 .nav span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 18px;
+	margin-left: 10px;
+	position: relative;
+	font-size: 12px;
+	color: #ffffff;
+}
+.b-1 .nav span a {
+	font-size: 12px;
+	color: #ffffff;
+}
+.b-1 .nav span a:hover {
+	text-decoration: underline;
+}
+.b-1 .nav span:first-child {
+	padding-left: 0;
+	margin-left: 0;
+}
+.b-1 .nav span::before {
+	content: '>';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 11px);
+	font-size: 16px;
+}
+.b-1 .nav span:first-child:before {
+	display: none;
+}
+
+.b-2 .b-block {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.b-2 p {
+	display: block;
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 16px;
+	color: rgb(155, 161, 169);
+	line-height: 1.5;
+}
+
+.b-5 .b-block {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.b-5-wrap {
+	border: 1px solid rgb(221, 223, 224);
+	border-radius: 4px;
+	padding: 50px 10px 40px;
+}
+.b-5 h2 {
+	display: block;
+	font-size: 36px;
+	color: rgb(62, 71, 87);
+	line-height: 1.2;
+	font-family: 'PfHighwaySansPro-Regular';
+	margin-bottom: 40px;
+}
+.b-5 h2 span {
+	color: #e61739;
+}
+.b-5 form {
+	box-sizing: border-box;
+	max-width: 730px;
+	width: 100%;
+	margin: 0 auto;
+}
+.b-5 form.b-5-form {
+	display: inline-block;
+	vertical-align: top;
+}
+.b-5 form .radio-name {
+	text-align: left;
+	font-family: 'OpenSans-SemiBold';
+	color: rgb(62, 71, 87);
+	font-size: 18px;
+	margin-bottom: 25px;
+	line-height: 1.2;
+}
+.b-5 form .form-wrap {
+	display: none;
+}
+.b-5 form .form-wrap.active {
+	display: block;
+}
+.b-5 form .radio-list li {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(50% - 4px);
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+.b-5 form .radio-list li:nth-child(odd) {
+	padding-right: 15px;
+}
+.b-5 form .radio-list li:nth-child(even) {
+	padding-left: 15px;
+}
+.b-5 form .radio-list input {
+	visibility: hidden !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 0 !important;
+	height: 0 !important;
+	border: 0 !important;
+}
+.b-5 form .radio-list label {
+	display: block;
+	box-sizing: border-box;
+	padding: 20px 10px;
+	border: 1px solid rgb(221, 223, 224);
+	border-radius: 4px;
+}
+.b-5 form .radio-list label:hover {
+	cursor: pointer;
+}
+.b-5 form .radio-list label span {
+	display: inline-block;
+	box-sizing: border-box;
+	max-width: 100%;
+	font-family: 'OpenSans-Regular';
+	font-size: 18px;
+	color: rgb(62, 71, 87);
+	line-height: 1.2;
+	position: relative;
+	padding-left: 48px;
+}
+.b-5 form .radio-list label span b {
+	display: block;
+	width: 27px;
+	height: 27px;
+	border-radius: 4px;
+	background-color: rgb(246, 247, 248);
+	position: absolute;
+	left: 0;
+	top: calc(50% - 14px);
+}
+.b-5 form .radio-list label.active span b {
+	background-color: rgb(255, 38, 74);
+}
+.b-5 form .radio-list label.active span b::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 14px;
+	left: 4px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.b-5 form .radio-list label.active span b::after {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.b-5-wrap form .select-wrap {
+	position: relative;
+	margin-bottom: 30px;
+}
+.b-5-wrap form .select-area {
+	display: block;
+	box-sizing: border-box;
+	text-align: left;
+	width: 100%;
+	padding: 20px;
+	font-family: 'OpenSans-Regular';
+	color: rgb(62, 71, 87);
+	font-size: 18px;
+	border: 0;
+	background-color: rgb(246, 247, 248);
+	border-radius: 4px;
+}
+.b-5-wrap form .select-area.active {
+	border-radius: 4px 4px 0 0;
+}
+.b-5-wrap form .select-area .arrow {
+	position: absolute;
+	top: calc(50% - 15px);
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-5-wrap form .select-area.active .arrow {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.b-5-wrap form .select-area .arrow::before {
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(-90deg);
+	-moz-transform: translate(-50%, -50%) rotate(-90deg);
+	-ms-transform: translate(-50%, -50%) rotate(-90deg);
+	transform: translate(-50%, -50%) rotate(-90deg);
+	background-size: contain;
+	background-image: url('../i/arr-prev.svg');
+}
+.b-5-wrap form .select-area span {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.b-5-wrap form .select-area:hover {
+	cursor: pointer;
+}
+.b-5-wrap form .select-drop {
+	display: none;
+	position: absolute;
+	background-color: rgb(246, 247, 248);
+	top: 100%;
+	left: 0;
+	width: 100%;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	padding: 20px;
+	box-sizing: border-box;
+	z-index: 10;
+}
+.b-5-wrap form .select-drop.active {
+	display: block;
+}
+.b-5-wrap form .select-drop a {
+	display: block;
+	text-align: left;
+	margin-bottom: 5px;
+	font-family: 'OpenSans-Regular';
+	color: rgb(62, 71, 87);
+	font-size: 18px;
+}
+.b-5-wrap form .select-drop a:last-child {
+	margin-bottom: 0;
+}
+.b-5-wrap form select {
+	display: none;
+	visibility: hidden;
+	border: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	font-size: 0;
+	padding: 0;
+}
+.b-5 form input {
+	display: block;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	text-align: left;
+	width: 100%;
+	padding: 20px;
+	font-family: 'OpenSans-Regular';
+	color: rgb(62, 71, 87);
+	font-size: 18px;
+	border: 0;
+	background-color: rgb(246, 247, 248);
+	border-radius: 4px;
+}
+.b-5 form input::-webkit-input-placeholder {color:rgb(62, 71, 87);}
+.b-5 form input::-moz-placeholder          {color:rgb(62, 71, 87);}
+.b-5 form input:-moz-placeholder           {color:rgb(62, 71, 87);}
+.b-5 form input:-ms-input-placeholder      {color:rgb(62, 71, 87);}
+.b-5 form input:focus::-webkit-input-placeholder {color:transparent;}
+.b-5 form input:focus::-moz-placeholder          {color:transparent;}
+.b-5 form input:focus:-moz-placeholder           {color:transparent;}
+.b-5 form input:focus:-ms-input-placeholder      {color:transparent;}
+.b-5 form textarea {
+	display: block;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	text-align: left;
+	width: 100%;
+	padding: 20px;
+	font-family: 'OpenSans-Regular';
+	color: rgb(62, 71, 87);
+	font-size: 18px;
+	border: 0;
+	background-color: rgb(246, 247, 248);
+	border-radius: 4px;
+	resize: none;
+	height: 180px;
+}
+.b-5 form textarea::-webkit-input-placeholder {color:rgb(62, 71, 87);}
+.b-5 form textarea::-moz-placeholder          {color:rgb(62, 71, 87);}
+.b-5 form textarea:-moz-placeholder           {color:rgb(62, 71, 87);}
+.b-5 form textarea:-ms-input-placeholder      {color:rgb(62, 71, 87);}
+.b-5 form textarea:focus::-webkit-input-placeholder {color:transparent;}
+.b-5 form textarea:focus::-moz-placeholder          {color:transparent;}
+.b-5 form textarea:focus:-moz-placeholder           {color:transparent;}
+.b-5 form textarea:focus:-ms-input-placeholder      {color:transparent;}
+.b-5 form .buttons {
+	border-top: 1px solid rgb(221, 223, 224);
+	padding-top: 30px;
+}
+.b-5 form .button-text {
+	display: inline-block;
+	max-width: 100%;
+	font-size: 14px;
+	color: rgb(155, 161, 169);
+	line-height: 1.2;
+	position: relative;
+	text-align: left;
+	padding-left: 48px;
+	margin-top: 10px;
+}
+.b-5 form .button-text a {
+	color: #74a3d2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-5 form .button-text a:hover {
+	color: #000000;
+}
+.b-5 form .button-text .radio-btn {
+	display: block;
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background-color: rgb(221, 223, 224);
+	left: 0;
+	top: 2px;
+	border-radius: 4px;
+}
+.b-5 form .button-text .radio-btn.error {
+	background-color: #ff0000;
+}
+.b-5 form .button-text .radio-btn:hover {
+	cursor: pointer;
+}
+.b-5 form .button-text .radio-btn.active::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	left: 4px;
+	top: 14px;
+	background-color: rgb(77, 86, 99);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.b-5 form .button-text .radio-btn.active::after {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 2px;
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	background-color: rgb(77, 86, 99);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.b-5 form .form-btn {
+	display: block;
+	max-width: 350px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	border: 0;
+	border-radius: 4px;
+	background-color: rgb(255, 221, 45);
+	font-size: 21px;
+	color: #000000;
+	font-family: 'OpenSans-Regular';
+}
+.b-5 form button {
+	display: inline-block;
+	padding: 20px 70px;
+	border: 0;
+	border-radius: 4px;
+	background-color: rgb(255, 221, 45);
+	font-size: 21px;
+	color: #000000;
+	font-family: 'OpenSans-Regular';
+}
+.b-5 form button:hover {
+	cursor: pointer;
+}
+.b-5-info {
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgb(246, 247, 248);
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 30px;
+	max-width: 350px;
+	width: 100%;
+	margin-left: 26px;
+}
+.b-5-info img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 20px;
+}
+.b-5-info .name {
+	text-align: left;
+	font-family: 'OpenSans-SemiBold';
+	color: #4d5663;
+	font-size: 18px;
+}
+.b-5-info .subname {
+	text-align: left;
+	color: #4d5663;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.b-5-info p {
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	color: #3e4757;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	.b-1 {
+		background-position: 55%;
+	}
+	.b-5-info {
+		display: block;
+		margin: 40px auto 0;
+	}
+	.b-5 form.b-5-form {
+		display: block;
+	}
+}
+@media screen and (max-width: 767px){
+	.b-1 {
+		background-position: center;
+	}
+	.b-1 h1 {
+		width: 100%;
+	}
+	.b-1 p {
+		width: 100%;
+	}
+	.b-1 .nav {
+		left: 10px;
+	}
+	.b-5 form .radio-list {
+		margin-bottom: 30px;
+	}
+	.b-5 form .radio-list li {
+		display: block;
+		width: 100%;
+		padding: 0 !important;
+		margin-bottom: 10px;
+	}
+	.b-5 form input, .b-5 form textarea {
+		font-size: 16px;
+	}
+	.b-5 form button {
+		display: block;
+		width: 100%;
+		max-width: 250px;
+		margin: 0 auto;
+		float: none !important;
+		padding: 20px;
+	}
+	.b-5 form .button-text {
+		float: none !important;
+	}
+}

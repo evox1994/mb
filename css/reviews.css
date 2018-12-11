@@ -1,0 +1,108 @@
+.b-1 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../i/reviews-fon.jpg');
+	text-align: left;
+}
+.b-1 .b-block {
+	padding-top: 170px;
+	padding-bottom: 170px;
+}
+.b-1 h1 {
+	display: block;
+	width: 50%;
+	margin-bottom: 20px;
+	font-size: 48px;
+	line-height: 1.2;
+	color: #ffffff;
+	font-family: 'PfHighwaySansPro-Regular';
+}
+.b-1 p {
+	display: block;
+	width: 50%;
+	margin-bottom: 80px;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 1.2;
+}
+.b-1-btn {
+	display: inline-block;
+	background-color: rgb(255, 221, 45);
+	padding: 20px 45px;
+	border-radius: 4px;
+	max-width: 100%;
+	box-sizing: border-box;
+	font-size: 21px;
+	color: #000000;
+}
+.b-1 .nav {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+.b-1 .nav span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 18px;
+	margin-left: 10px;
+	position: relative;
+	font-size: 12px;
+	color: #ffffff;
+}
+.b-1 .nav span a {
+	font-size: 12px;
+	color: #ffffff;
+}
+.b-1 .nav span a:hover {
+	text-decoration: underline;
+}
+.b-1 .nav span:first-child {
+	padding-left: 0;
+	margin-left: 0;
+}
+.b-1 .nav span::before {
+	content: '>';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: calc(50% - 11px);
+	font-size: 16px;
+}
+.b-1 .nav span:first-child:before {
+	display: none;
+}
+
+.b-2 .b-block {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+	.b-1 {
+		background-position: 55%;
+	}
+}
+@media screen and (max-width: 767px){
+	.b-1 {
+		background-position: center;
+	}
+	.b-1 h1 {
+		width: 100%;
+	}
+	.b-1 p {
+		width: 100%;
+	}
+	.b-1 .nav {
+		left: 10px;
+	}
+}

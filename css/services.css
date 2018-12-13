@@ -9,7 +9,7 @@
 	padding-top: 100px;
 	padding-bottom: 70px;
 }
-.b-1 h1 {
+.b-1 h2 {
 	display: block;
 	width: 60%;
 	margin-bottom: 20px;
@@ -35,6 +35,13 @@
 	box-sizing: border-box;
 	font-size: 21px;
 	color: #000000;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-1-btn:hover {
+	background-color: rgb(225, 191, 25);
 }
 .b-1 .nav {
 	display: block;
@@ -54,9 +61,13 @@
 .b-1 .nav span a {
 	font-size: 12px;
 	color: rgb(155, 161, 169);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-1 .nav span a:hover {
-	text-decoration: underline;
+	color: #ffffff;
 }
 .b-1 .nav span:first-child {
 	padding-left: 0;
@@ -278,6 +289,13 @@
 	border-radius: 4px;
 	background-color: rgb(255, 221, 45);
 	margin-bottom: 15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-btn:hover {
+	background-color: rgb(225, 191, 25);
 }
 .b-3-list .more-a {
 	display: inline-block;
@@ -289,7 +307,7 @@
 	padding-top: 60px;
 	padding-bottom: 30px;
 }
-.b-4 h2 {
+.b-4 h1 {
 	display: block;
 	text-align: left;
 	font-family: 'PfHighwaySansPro-Regular';
@@ -297,7 +315,7 @@
 	color: #3e4757;
 	margin-bottom: 10px;
 }
-.b-4 h3 {
+.b-4 h2 {
 	display: block;
 	text-align: left;
 	font-size: 18px;
@@ -331,7 +349,7 @@
 	.b-1 {
 		background-position: center;
 	}
-	.b-1 h1 {
+	.b-1 h2 {
 		width: 100%;
 	}
 	.b-1 p {

@@ -144,6 +144,16 @@
 .b-3 .social-list li a img {
 	display: block;
 	width: 100%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3 .social-list li a:hover img {
+	-webkit-filter: brightness(0.6);
+	-moz-filter: brightness(0.6);
+	-ms-filter: brightness(0.6);
+	filter: brightness(0.6);
 }
 .b-3 .map iframe {
 	width: 100%;

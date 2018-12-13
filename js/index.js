@@ -1,8 +1,16 @@
 $(document).ready(function(){
 
 	$('.b-1-slider').slick({
-		dots: true
+		dots: true,
+		fade: true,
+		autoplay: true
 	});
+
+	$('.b-1-slider').on('afterChange',function(event, slick, currentSlide){
+		$('.pos .number').text(currentSlide + 1);
+	});
+
+	$('.pos .all').text($('.b-1-slider').slick('getSlick').slideCount);
 
 	$('.b-3 .filter li').click(function(){
 		$('.b-3 .filter li').removeClass('active');

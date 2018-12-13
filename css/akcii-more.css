@@ -441,6 +441,13 @@
 	font-size: 21px;
 	color: #000000;
 	font-family: 'OpenSans-Regular';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-5 form .form-btn:hover {
+	background-color: rgb(225, 191, 25);
 }
 .b-5 form button {
 	display: inline-block;
@@ -454,6 +461,7 @@
 }
 .b-5 form button:hover {
 	cursor: pointer;
+	background-color: rgb(225, 191, 25);
 }
 .b-5-info {
 	display: inline-block;

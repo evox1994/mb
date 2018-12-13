@@ -47,4 +47,16 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.header-nav .li-drop').click(function(){
+		if ( $(window).width() < 768 ){
+			if ( $(this).hasClass('active') ){
+				$(this).removeClass('active');
+			} else {
+				$(this).addClass('active');
+			}
+		}
+	});
+
+	$('.fancybox').fancybox();
+
 });

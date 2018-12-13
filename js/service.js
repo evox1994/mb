@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	if (location.hash){
+		$('body,html').animate({scrollTop:0},1);
+		setTimeout(function(){
+			var des = $(location.hash).offset().top - 104;
+			$('body,html').animate({scrollTop: des}, 800);
+		},500);
+	}
+
 	function Numbers(){
 		var i = j = 0;
 		$('.b-3-list li').each(function(){

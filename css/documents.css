@@ -167,6 +167,13 @@
 	box-sizing: border-box;
 	font-size: 21px;
 	color: #000000;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .fix-window .fix-btn:hover {
+	background-color: rgb(225, 191, 25);
 }
 
 

@@ -271,6 +271,7 @@
 }
 .b-3 .filter li.active {
 	border: 1px solid rgb(221, 223, 224);
+	color: rgb(62, 71, 87);
 }
 .b-3-slider {
 	padding: 0 40px;
@@ -644,6 +645,8 @@
 	border: 1px solid rgb(246, 247, 248);
 	border-radius: 4px;
 	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -676,6 +679,8 @@
 	resize: none;
 	height: 180px;
 	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -829,7 +834,11 @@
 		max-width: 100%;
 		margin: 0 auto;
 	}
+	.b-1 h2 {
+		font-size: 24px;
+	}
 	.b-1 p {
+		font-size: 14px;
 		margin-bottom: 30px;
 	}
 	.b-1-btn {

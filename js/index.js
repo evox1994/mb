@@ -13,8 +13,16 @@ $(document).ready(function(){
 	$('.pos .all').text($('.b-1-slider').slick('getSlick').slideCount);
 
 	$('.b-3 .filter li').click(function(){
+		var el = $(this).data('f');
 		$('.b-3 .filter li').removeClass('active');
 		$(this).addClass('active');
+		$('.b-3-slider').removeClass('active');
+		setTimeout(function(){
+			$('.b-3-slider').css('display','none');
+			$(el).css('display','block');
+			$(el).addClass('active');
+			$('.b-3-slider').slick('reinit');
+		},300);
 	});
 
 	$('.b-3-slider').slick({

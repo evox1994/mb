@@ -192,7 +192,6 @@
 	color: rgb(62, 71, 87);
 	line-height: 1.2;
 	font-family: 'PfHighwaySansPro-Regular';
-	text-align: left;
 	margin-bottom: 40px;
 }
 .b-3 .filter {
@@ -206,7 +205,7 @@
 	padding: 10px;
 	box-sizing: border-box;
 	border-radius: 4px;
-	border: 1px solid rgb(221, 223, 224);
+	border: 1px solid transparent;
 	margin: 0 15px;
 	overflow: hidden;
 	color: rgb(116, 163, 210);
@@ -220,10 +219,11 @@
 }
 .b-3 .filter li:hover {
 	cursor: pointer;
+	color: rgb(62, 71, 87);
 }
 .b-3 .filter li.active {
+	border: 1px solid rgb(221, 223, 224);
 	color: rgb(62, 71, 87);
-	background-color: rgb(221, 223, 224);
 }
 .b-3 .more-btn {
 	display: block;
@@ -236,6 +236,13 @@
 	padding: 20px;
 	font-size: 18px;
 	color: rgb(116, 163, 210);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3 .more-btn:hover {
+	background-color: rgba(84,133,184,.08);
 }
 .b-3-list li {
 	display: block;
@@ -317,6 +324,13 @@
 	display: inline-block;
 	color: #ffffff;
 	font-size: 16px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-3-list .more-a:hover {
+	color: rgb(255, 221, 45);
 }
 
 .b-4 .b-block {
@@ -359,6 +373,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.b-1 {
+		text-align: center;
+	}
 	.b-1 .b-block {
 		padding-bottom: 0;
 	}

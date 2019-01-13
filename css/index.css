@@ -828,6 +828,7 @@
 @media screen and (max-width: 767px){
 	.b-1-slide {
 		padding: 10px 10px 0;
+		text-align: center;
 	}
 	.b-1-slide .abs-img {
 		position: static;
@@ -852,11 +853,11 @@
 		transform: translateX(-50%);
 	}
 	.b-1 .pos {
-		/*right: 50%;
+		right: 50%;
 		-webkit-transform: translateX(50%);
 		-moz-transform: translateX(50%);
 		-ms-transform: translateX(50%);
-		transform: translateX(50%);*/
+		transform: translateX(50%);
 	}
 	.b-2-wrap-1 .b-block {
 		padding-bottom: 40px;

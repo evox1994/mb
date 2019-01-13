@@ -46,9 +46,13 @@
 .b-1 .nav span a {
 	font-size: 12px;
 	color: rgb(155, 161, 169);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-1 .nav span a:hover {
-	text-decoration: underline;
+	color: #ffffff;
 }
 .b-1 .nav span:first-child {
 	padding-left: 0;

@@ -59,4 +59,35 @@ $(document).ready(function(){
 
 	$('.fancybox').fancybox();
 
+	$('input').on('input',function(){
+		$(this).removeClass('error');
+	});
+	$('textarea').on('input',function(){
+		$(this).removeClass('error');
+	});
+
+	$('form button[type="submit"]').click(function(){
+		if ( $(this).closest('form').find('.button-text .radio-btn').hasClass('active') ) {
+			$(this).closest('form').find('input').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+			$(this).closest('form').find('textarea').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+		} else {
+			$(this).closest('form').find('.button-text .radio-btn').addClass('error');
+			event.preventDefault();
+		}
+	});
+
 });

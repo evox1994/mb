@@ -63,14 +63,18 @@
 	margin-left: 10px;
 	position: relative;
 	font-size: 12px;
-	color: #ffffff;
+	color: rgb(155, 161, 169);
 }
 .b-1 .nav span a {
 	font-size: 12px;
-	color: #ffffff;
+	color: rgb(155, 161, 169);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-1 .nav span a:hover {
-	text-decoration: underline;
+	color: #ffffff;
 }
 .b-1 .nav span:first-child {
 	padding-left: 0;
@@ -146,12 +150,23 @@
 	line-height: 1.2;
 	color: rgb(62, 71, 87);
 	margin-bottom: 10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2-list li:hover .li-name, .b-2-list li:hover .li-hash {
+	color: #000000;
 }
 .b-2-list .li-hash {
 	text-align: left;
 	font-size: 14px;
 	color: rgb(77, 86, 99);
 	line-height: 1.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-2 .more-btn {
 	display: block;
@@ -164,6 +179,13 @@
 	padding: 20px;
 	font-size: 18px;
 	color: rgb(116, 163, 210);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .more-btn:hover {
+	background-color: rgba(84,133,184,.08);
 }
 
 
@@ -190,6 +212,10 @@
 	}
 	.b-1 .nav {
 		left: 10px;
+	}
+	.b-2 .filter li {
+		display: block;
+		margin: 0 auto 10px;
 	}
 	.b-2-list li {
 		display: block;

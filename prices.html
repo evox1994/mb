@@ -148,11 +148,30 @@
 						<a href="#form-wrap-2" class="form-btn">Далее</a>
 					</div>
 					<div class="form-wrap" id="form-wrap-2">
-						<input type="email" placeholder="Введите e-mail для обмена данными">
-						<input type="text" placeholder="Укажите имя ответственного лица">
-						<input type="tel" placeholder="Его номер телефона">
+						<div class="radio-name center">Ваш отчёт готов! Кому его передать?</div>
+						<input type="text" placeholder="Введите имя">
+						<div class="radio-name center">Выберите удобный способ получения расчёта</div>
+						<ul class="radio-list">
+							<li>
+								<input type="radio" name="sp" id="sp-1" value="call" checked>
+								<label for="sp-1" class="active"><span>Звонок<b></b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="sp" id="sp-2" value="sms">
+								<label for="sp-2"><span>SMS<b></b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="sp" id="sp-3" value="WhatsApp">
+								<label for="sp-3"><span>WhatsApp<b></b></span></label>
+							</li>
+							<li>
+								<input type="radio" name="sp" id="sp-4" value="Viber">
+								<label for="sp-4"><span>Viber<b></b></span></label>
+							</li>
+						</ul>
+						<input type="tel" placeholder="Номер телефона контактного лица">
 						<div class="buttons clearfix">
-							<button type="submit" class="right">Отправить</button>
+							<button type="submit" class="right">Получить расчёт</button>
 							<div class="button-text left"><div class="radio-btn active"></div>Отправляя заявку, Вы соглашаетесь<br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
 						</div>
 					</div>

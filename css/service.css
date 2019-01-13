@@ -77,9 +77,13 @@
 .b-1 .nav span a {
 	font-size: 12px;
 	color: rgb(155, 161, 169);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-1 .nav span a:hover {
-	text-decoration: underline;
+	color: #ffffff;
 }
 .b-1 .nav span:first-child {
 	padding-left: 0;
@@ -457,6 +461,9 @@
 	margin-bottom: 25px;
 	line-height: 1.2;
 }
+.b-5 form .radio-name.center {
+	text-align: center;
+}
 .b-5 form .form-wrap {
 	display: none;
 }
@@ -490,6 +497,7 @@
 	padding: 20px 10px;
 	border: 1px solid rgb(221, 223, 224);
 	border-radius: 4px;
+	text-align: left;
 }
 .b-5 form .radio-list label:hover {
 	cursor: pointer;
@@ -915,6 +923,9 @@
 	}
 }
 @media screen and (max-width: 767px) {
+	.b-1 {
+		text-align: center;
+	}
 	.b-1 .b-block {
 		padding-bottom: 0;
 	}
@@ -979,6 +990,9 @@
 	}
 	.b-5 form input, .b-5 form textarea {
 		font-size: 16px;
+	}
+	.b-5 form .form-btn {
+		margin: 0 auto;
 	}
 	.b-5 form button {
 		display: block;

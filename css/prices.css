@@ -68,7 +68,7 @@
 	padding: 10px;
 	box-sizing: border-box;
 	border-radius: 4px;
-	border: 1px solid rgb(221, 223, 224);
+	border: 1px solid transparent;
 	margin: 0 15px;
 	overflow: hidden;
 	color: rgb(116, 163, 210);
@@ -82,10 +82,11 @@
 }
 .b-2 .filter li:hover {
 	cursor: pointer;
+	color: rgb(62, 71, 87);
 }
 .b-2 .filter li.active {
+	border: 1px solid rgb(221, 223, 224);
 	color: rgb(62, 71, 87);
-	background-color: rgb(221, 223, 224);
 }
 .b-2-wrap-2 {
 	background-color: rgb(246, 247, 248);
@@ -178,7 +179,7 @@
 	padding: 10px;
 	box-sizing: border-box;
 	border-radius: 4px;
-	border: 1px solid rgb(221, 223, 224);
+	border: 1px solid transparent;
 	margin: 0 15px;
 	overflow: hidden;
 	color: rgb(116, 163, 210);
@@ -192,10 +193,11 @@
 }
 .b-3 .filter li:hover {
 	cursor: pointer;
+	color: rgb(62, 71, 87);
 }
 .b-3 .filter li.active {
+	border: 1px solid rgb(221, 223, 224);
 	color: rgb(62, 71, 87);
-	background-color: rgb(221, 223, 224);
 }
 .b-3-list li {
 	display: inline-block;
@@ -530,9 +532,16 @@
 	font-family: 'OpenSans-Regular';
 	color: rgb(62, 71, 87);
 	font-size: 18px;
-	border: 0;
+	border: 1px solid rgb(246, 247, 248);
 	background-color: rgb(246, 247, 248);
 	border-radius: 4px;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-5 form input::-webkit-input-placeholder {color:rgb(62, 71, 87);}
 .b-5 form input::-moz-placeholder          {color:rgb(62, 71, 87);}
@@ -542,6 +551,9 @@
 .b-5 form input:focus::-moz-placeholder          {color:transparent;}
 .b-5 form input:focus:-moz-placeholder           {color:transparent;}
 .b-5 form input:focus:-ms-input-placeholder      {color:transparent;}
+.b-5 form input:focus {
+	background-color: #ffffff;
+}
 .b-5 form textarea {
 	display: block;
 	margin-bottom: 30px;
@@ -552,11 +564,18 @@
 	font-family: 'OpenSans-Regular';
 	color: rgb(62, 71, 87);
 	font-size: 18px;
-	border: 0;
+	border: 1px solid rgb(246, 247, 248);
 	background-color: rgb(246, 247, 248);
 	border-radius: 4px;
 	resize: none;
 	height: 180px;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-5 form textarea::-webkit-input-placeholder {color:rgb(62, 71, 87);}
 .b-5 form textarea::-moz-placeholder          {color:rgb(62, 71, 87);}
@@ -566,6 +585,9 @@
 .b-5 form textarea:focus::-moz-placeholder          {color:transparent;}
 .b-5 form textarea:focus:-moz-placeholder           {color:transparent;}
 .b-5 form textarea:focus:-ms-input-placeholder      {color:transparent;}
+.b-5 form textarea:focus {
+	background-color: #ffffff;
+}
 .b-5 form .buttons {
 	border-top: 1px solid rgb(221, 223, 224);
 	padding-top: 30px;

@@ -2,7 +2,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url('../i/services-fon.jpg');
+	background-image: -moz-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
 	text-align: left;
 }
 .b-1 .b-block {
@@ -17,6 +19,8 @@
 	line-height: 1.2;
 	color: #ffffff;
 	font-family: 'PfHighwaySansPro-Regular';
+	position: relative;
+	z-index: 1;
 }
 .b-1 p {
 	display: block;
@@ -25,6 +29,16 @@
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 1.2;
+	position: relative;
+	z-index: 1;
+}
+.b-1 .abs-img {
+	display: block;
+	max-width: 50%;
+	max-height: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
 }
 .b-1-btn {
 	display: inline-block;
@@ -39,6 +53,8 @@
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+	position: relative;
+	z-index: 1;
 }
 .b-1-btn:hover {
 	background-color: rgb(225, 191, 25);
@@ -335,9 +351,6 @@
 
 
 @media screen and (max-width: 1280px){
-	.b-1 {
-		background-position: 60%;
-	}
 	.b-3-list .li-item {
 		display: block;
 		width: 100%;
@@ -346,14 +359,30 @@
 	}
 }
 @media screen and (max-width: 767px) {
-	.b-1 {
-		background-position: center;
+	.b-1 .b-block {
+		padding-bottom: 0;
 	}
 	.b-1 h2 {
 		width: 100%;
 	}
 	.b-1 p {
 		width: 100%;
+		margin-bottom: 20px;
+	}
+	.b-1 .abs-img {
+		position: static;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.b-1-btn {
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		white-space: nowrap;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 	.b-1 .nav {
 		left: 10px;

@@ -2,7 +2,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url('../i/reviews-fon.jpg');
+	background-image: -moz-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
 	text-align: left;
 }
 .b-1 .b-block {
@@ -25,6 +27,14 @@
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 1.2;
+}
+.b-1 .abs-img {
+	display: block;
+	max-width: 50%;
+	max-height: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
 }
 .b-1-btn {
 	display: inline-block;
@@ -88,19 +98,22 @@
 
 
 @media screen and (max-width: 1280px){
-	.b-1 {
-		background-position: 55%;
-	}
 }
 @media screen and (max-width: 767px){
-	.b-1 {
-		background-position: center;
+	.b-1 .b-block {
+		padding-bottom: 0;
 	}
 	.b-1 h1 {
 		width: 100%;
 	}
 	.b-1 p {
 		width: 100%;
+		margin-bottom: 20px;
+	}
+	.b-1 .abs-img {
+		position: static;
+		max-width: 100%;
+		margin: 0 auto;
 	}
 	.b-1 .nav {
 		left: 10px;

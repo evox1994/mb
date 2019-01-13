@@ -2,7 +2,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url('../i/documents-fon.jpg');
+	background-image: -moz-linear-gradient( 0deg, rgb(255,183,38) 0%, rgb(255,196,76) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(255,183,38) 0%, rgb(255,196,76) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(255,183,38) 0%, rgb(255,196,76) 100%);
 	text-align: left;
 }
 .b-1 .b-block {
@@ -17,6 +19,8 @@
 	line-height: 1.2;
 	color: #ffffff;
 	font-family: 'PfHighwaySansPro-Regular';
+	position: relative;
+	z-index: 1;
 }
 .b-1 p {
 	display: block;
@@ -25,6 +29,16 @@
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 1.2;
+	position: relative;
+	z-index: 1;
+}
+.b-1 .abs-img {
+	display: block;
+	max-width: 50%;
+	max-height: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
 }
 .b-1-btn {
 	display: inline-block;
@@ -35,6 +49,8 @@
 	box-sizing: border-box;
 	font-size: 21px;
 	color: #000000;
+	position: relative;
+	z-index: 1;
 }
 .b-1 .nav {
 	display: block;
@@ -183,9 +199,6 @@
 
 
 @media screen and (max-width: 1280px){
-	.b-1 {
-		background-position: 65%;
-	}
 	.b-2-wrap {
 		padding-right: 300px;
 	}
@@ -194,14 +207,20 @@
 	}
 }
 @media screen and (max-width: 767px){
-	.b-1 {
-		background-position: center;
+	.b-1 .b-block {
+		padding-bottom: 0;
 	}
 	.b-1 h1 {
 		width: 100%;
 	}
 	.b-1 p {
 		width: 100%;
+		margin-bottom: 20px;
+	}
+	.b-1 .abs-img {
+		position: static;
+		max-width: 100%;
+		margin: 0 auto;
 	}
 	.b-1 .nav {
 		left: 10px;

@@ -2,7 +2,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url('../i/akcii-more-fon.jpg');
+	background-image: -moz-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(78,89,107) 0%, rgb(112,124,145) 100%);
 	text-align: left;
 }
 .b-1 .b-block {
@@ -25,6 +27,18 @@
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 1.2;
+}
+.b-1 .abs-img {
+	display: block;
+	max-width: 50%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	right: calc(25% - 30px);
+	-webkit-transform: translate(50%, -50%);
+	-moz-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
 }
 .b-1-btn {
 	display: inline-block;
@@ -324,9 +338,16 @@
 	font-family: 'OpenSans-Regular';
 	color: rgb(62, 71, 87);
 	font-size: 18px;
-	border: 0;
+	border: 1px solid rgb(246, 247, 248);
 	background-color: rgb(246, 247, 248);
 	border-radius: 4px;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-5 form input::-webkit-input-placeholder {color:rgb(62, 71, 87);}
 .b-5 form input::-moz-placeholder          {color:rgb(62, 71, 87);}
@@ -336,6 +357,9 @@
 .b-5 form input:focus::-moz-placeholder          {color:transparent;}
 .b-5 form input:focus:-moz-placeholder           {color:transparent;}
 .b-5 form input:focus:-ms-input-placeholder      {color:transparent;}
+.b-5 form input:focus {
+	background-color: #ffffff;
+}
 .b-5 form textarea {
 	display: block;
 	margin-bottom: 30px;
@@ -346,11 +370,18 @@
 	font-family: 'OpenSans-Regular';
 	color: rgb(62, 71, 87);
 	font-size: 18px;
-	border: 0;
+	border: 1px solid rgb(246, 247, 248);
 	background-color: rgb(246, 247, 248);
 	border-radius: 4px;
 	resize: none;
 	height: 180px;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-5 form textarea::-webkit-input-placeholder {color:rgb(62, 71, 87);}
 .b-5 form textarea::-moz-placeholder          {color:rgb(62, 71, 87);}
@@ -360,6 +391,9 @@
 .b-5 form textarea:focus::-moz-placeholder          {color:transparent;}
 .b-5 form textarea:focus:-moz-placeholder           {color:transparent;}
 .b-5 form textarea:focus:-ms-input-placeholder      {color:transparent;}
+.b-5 form textarea:focus {
+	background-color: #ffffff;
+}
 .b-5 form .buttons {
 	border-top: 1px solid rgb(221, 223, 224);
 	padding-top: 30px;
@@ -507,9 +541,6 @@
 
 
 @media screen and (max-width: 1280px){
-	.b-1 {
-		background-position: 55%;
-	}
 	.b-5-info {
 		display: block;
 		margin: 40px auto 0;
@@ -519,14 +550,23 @@
 	}
 }
 @media screen and (max-width: 767px){
-	.b-1 {
-		background-position: center;
+	.b-1 .b-block {
+		padding-bottom: 40px;
 	}
 	.b-1 h1 {
 		width: 100%;
 	}
 	.b-1 p {
 		width: 100%;
+		margin-bottom: 0;
+	}
+	.b-1 .abs-img {
+		position: static;
+		margin: 0 auto 30px;
+		-webkit-transform: translate(0,0);
+		-moz-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		transform: translate(0,0);
 	}
 	.b-1 .nav {
 		left: 10px;

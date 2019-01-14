@@ -375,6 +375,7 @@
 	padding: 20px 10px;
 	border: 1px solid rgb(221, 223, 224);
 	border-radius: 4px;
+	text-align: left;
 }
 .b-5 form .radio-list label:hover {
 	cursor: pointer;

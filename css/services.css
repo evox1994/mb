@@ -302,6 +302,11 @@
 	width: 100%;
 	margin: 0 auto 30px;
 }
+.b-3-list .li-image img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
 .b-3-btn {
 	display: block;
 	box-sizing: border-box;
@@ -421,6 +426,29 @@
 	}
 	.b-3-list li {
 		padding: 30px;
+	}
+	.b-3-list .li-wrap {
+		padding-right: 130px;
+	}
+	.b-3-list .li-name {
+		font-size: 24px;
+	}
+	.b-3-list .li-text {
+		font-size: 16px;
+	}
+	.b-3-list .li-item .item-name {
+		font-size: 16px;
+	}
+	.b-3-list .li-item p {
+		font-size: 12px;
+	}
+	.b-3-list .li-image {
+		margin: auto;
+		max-width: 100px;
+		max-height: 100px;
+		position: absolute;
+		top: 30px;
+		right: 30px;
 	}
 	.b-3-list .li-abs {
 		position: static;

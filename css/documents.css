@@ -165,6 +165,17 @@
 	top: 0;
 	right: 0;
 }
+.b-2 .fix-window.scroll {
+	position: fixed;
+	top: 80px;
+	right: calc(50% - 585px);
+}
+.b-2 .fix-window.bottom {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	right: 0;
+}
 .b-2 .fix-window .name {
 	color: #ffffff;
 	font-family: 'OpenSans-SemiBold';
@@ -208,6 +219,9 @@
 	}
 	.b-2-list li {
 		width: calc(50% - 4px);
+	}
+	.b-2 .fix-window.scroll {
+		right: 30px;
 	}
 }
 @media screen and (max-width: 767px){

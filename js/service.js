@@ -3,14 +3,14 @@ $(document).ready(function(){
 	if (location.hash){
 		$('body,html').animate({scrollTop:0},1);
 		setTimeout(function(){
-			var des = $(location.hash).offset().top - 104;
+			var des = $(location.hash).offset().top - 30;
 			$('body,html').animate({scrollTop: des}, 800);
 		},500);
 	}
 
 	$('.b-1-btn').click(function(){
 		var el = $(this).attr('href');
-		var des = $(el).offset().top - 104;
+		var des = $(el).offset().top - 30;
 		$('body,html').animate({scrollTop: des}, 800);
 		return false;
 	});
@@ -37,8 +37,31 @@ $(document).ready(function(){
 
 	$('.form-btn').click(function(){
 		var el = $(this).attr('href');
+		if ( $(window).width() < 768 ){
+			var des = $('.form-wrap.active').offset().top - 70;
+			$('html,body').animate({scrollTop: des},500);
+		}
 		$('.form-wrap').removeClass('active');
-		$(el).addClass('active');
+		setTimeout(function(){
+			$('.form-wrap').css('display','none');
+			$(el).css('display','block');
+			$(el).addClass('active');
+		},300);
+		return false;
+	});
+
+	$('.form-btn-2').click(function(){
+		var el = $(this).attr('href');
+		if ( $(window).width() < 768 ){
+			var des = $('.form-wrap.active').offset().top - 70;
+			$('html,body').animate({scrollTop: des},500);
+		}
+		$('.form-wrap').removeClass('active');
+		setTimeout(function(){
+			$('.form-wrap').css('display','none');
+			$(el).css('display','block');
+			$(el).addClass('active');
+		},300);
 		return false;
 	});
 

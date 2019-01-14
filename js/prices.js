@@ -27,8 +27,31 @@ $(document).ready(function(){
 
 	$('.form-btn').click(function(){
 		var el = $(this).attr('href');
+		if ( $(window).width() < 768 ){
+			var des = $('.form-wrap.active').offset().top - 70;
+			$('html,body').animate({scrollTop: des},500);
+		}
 		$('.form-wrap').removeClass('active');
-		$(el).addClass('active');
+		setTimeout(function(){
+			$('.form-wrap').css('display','none');
+			$(el).css('display','block');
+			$(el).addClass('active');
+		},300);
+		return false;
+	});
+
+	$('.form-btn-2').click(function(){
+		var el = $(this).attr('href');
+		if ( $(window).width() < 768 ){
+			var des = $('.form-wrap.active').offset().top - 70;
+			$('html,body').animate({scrollTop: des},500);
+		}
+		$('.form-wrap').removeClass('active');
+		setTimeout(function(){
+			$('.form-wrap').css('display','none');
+			$(el).css('display','block');
+			$(el).addClass('active');
+		},300);
 		return false;
 	});
 

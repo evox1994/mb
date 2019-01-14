@@ -230,15 +230,18 @@
 	}
 	.b-1 h1 {
 		width: 100%;
+		font-size: 24px;
 	}
 	.b-1 p {
 		width: 100%;
+		font-size: 14px;
 		margin-bottom: 20px;
 	}
 	.b-1 .abs-img {
 		position: static;
 		max-width: 100%;
 		margin: 0 auto;
+		max-height: 300px;
 	}
 	.b-1 .nav {
 		left: 10px;

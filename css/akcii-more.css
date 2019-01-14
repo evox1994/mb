@@ -554,19 +554,26 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1 {
+		text-align: center;
+	}
 	.b-1 .b-block {
+		padding-top: 70px;
 		padding-bottom: 40px;
 	}
 	.b-1 h1 {
 		width: 100%;
+		font-size: 24px;
 	}
 	.b-1 p {
 		width: 100%;
-		margin-bottom: 0;
+		font-size: 14px;
+		margin-bottom: 20px;
 	}
 	.b-1 .abs-img {
 		position: static;
 		margin: 0 auto 30px;
+		max-height: 300px;
 		-webkit-transform: translate(0,0);
 		-moz-transform: translate(0,0);
 		-ms-transform: translate(0,0);

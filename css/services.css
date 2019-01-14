@@ -196,7 +196,6 @@
 }
 .b-3 .filter {
 	margin-bottom: 50px;
-	text-align: left;
 }
 .b-3 .filter li {
 	display: inline-block;
@@ -386,15 +385,18 @@
 	}
 	.b-1 h2 {
 		width: 100%;
+		font-size: 24px;
 	}
 	.b-1 p {
 		width: 100%;
+		font-size: 14px;
 		margin-bottom: 20px;
 	}
 	.b-1 .abs-img {
 		position: static;
 		max-width: 100%;
 		margin: 0 auto;
+		max-height: 300px;
 	}
 	.b-1-btn {
 		position: absolute;
@@ -438,6 +440,7 @@
 	}
 	.b-3-list .li-item .item-name {
 		font-size: 16px;
+		margin-bottom: 5px;
 	}
 	.b-3-list .li-item p {
 		font-size: 12px;

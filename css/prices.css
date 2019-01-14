@@ -26,7 +26,7 @@
 	transition: all 0.3s;
 }
 .b-1 .nav span a:hover {
-	color: #ffffff;
+	color: rgb(115, 121, 129);
 }
 .b-1 .nav span:first-child {
 	padding-left: 0;
@@ -338,10 +338,15 @@
 	line-height: 1.2;
 }
 .b-5 form .form-wrap {
+	opacity: 0;
 	display: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .b-5 form .form-wrap.active {
-	display: block;
+	opacity: 1;
 }
 .b-5 form .radio-list li {
 	display: inline-block;
@@ -680,6 +685,26 @@
 }
 .b-5 form .form-btn:hover {
 	background-color: rgb(225, 191, 25);
+}
+.b-5 form .form-btn-2 {
+	display: block;
+	max-width: 350px;
+	width: calc(50% - 15px);
+	box-sizing: border-box;
+	padding: 20px;
+	border: 1px solid rgb(116, 163, 210);
+	border-radius: 4px;
+	background-color: transparent;
+	font-size: 21px;
+	color: rgb(116, 163, 210);
+	font-family: 'OpenSans-Regular';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-5 form .form-btn-2:hover {
+	background-color: rgba(84,133,184,.08);
 }
 .b-5 form button {
 	display: inline-block;

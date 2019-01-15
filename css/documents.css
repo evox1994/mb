@@ -225,6 +225,9 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1 {
+		text-align: center;
+	}
 	.b-1 .b-block {
 		padding-bottom: 0;
 	}

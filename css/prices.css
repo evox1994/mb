@@ -445,12 +445,13 @@
 	font-family: 'OpenSans-Regular';
 	color: rgb(62, 71, 87);
 	font-size: 18px;
-	border: 0;
+	border: 1px solid rgb(246, 247, 248);
 	background-color: rgb(246, 247, 248);
 	border-radius: 4px;
 }
 .b-5-wrap form .select-area.active {
 	border-radius: 4px 4px 0 0;
+	background-color: #ffffff;
 }
 .b-5-wrap form .select-area .arrow {
 	position: absolute;
@@ -502,6 +503,7 @@
 	top: 100%;
 	left: 0;
 	width: 100%;
+	border: 1px solid rgb(246, 247, 248);
 	border-top: 0;
 	border-radius: 0 0 4px 4px;
 	padding: 20px;
@@ -510,6 +512,7 @@
 }
 .b-5-wrap form .select-drop.active {
 	display: block;
+	background-color: #ffffff;
 }
 .b-5-wrap form .select-drop a {
 	display: block;

@@ -385,9 +385,9 @@ input:-moz-placeholder {
 	padding: 0 5px 3px;
 	position: relative;
 }
-.header .header-nav ul li.li-drop {
+/*.header .header-nav ul li.li-drop {
 	padding: 0 28px 3px 5px;
-}
+}*/
 .header .header-nav ul li::before {
 	content: '';
 	display: block;
@@ -406,7 +406,7 @@ input:-moz-placeholder {
 .header .header-nav ul li:hover:before {
 	opacity: 1;
 }
-.header .header-nav ul li.li-drop::after {
+/*.header .header-nav ul li.li-drop::after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -432,7 +432,7 @@ input:-moz-placeholder {
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	transform: rotate(-90deg);
-}
+}*/
 .header .header-nav ul li a {
 	display: inline-block;
 	font-size: 14px;

@@ -352,12 +352,16 @@
 	font-size: 18px;
 	color: #3e4757;
 }
+.b-4-list {
+	text-align: left;
+}
 .b-4-list li {
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
 	padding: 0 10px;
 	width: calc(25% - 4px);
+	text-align: center;
 	margin-bottom: 30px;
 }
 .b-4-list .li-ball {

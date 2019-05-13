@@ -304,9 +304,13 @@
 	padding-bottom: 40px;
 }
 .b-5-wrap {
+	display: none;
 	border: 1px solid rgb(221, 223, 224);
 	border-radius: 4px;
 	padding: 50px 10px 40px;
+}
+.b-5-wrap.active {
+	display: block;
 }
 .b-5 h2 {
 	display: block;

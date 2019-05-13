@@ -16,14 +16,17 @@ $(document).ready(function(){
 	});
 
 	function Numbers(){
-		var i = j = 0;
-		$('.b-3-list li').each(function(){
-			i++;
-			$(this).find('.li-number span').text(i);
+		var i = 0;
+		$('.b-3-list').each(function(){
+			var j = 0;
+			$(this).find('li').each(function(){
+				j++;
+				$(this).find('.li-number span').text(j);
+			});
 		});
 		$('.b-4-list li').each(function(){
-			j++;
-			$(this).find('.li-number span').text(j);
+			i++;
+			$(this).find('.li-number span').text(i);
 		});
 	}
 	Numbers();
@@ -131,8 +134,11 @@ $(document).ready(function(){
 	});
 	
 	$('.b-3 .filter li').click(function(){
+		var el = $(this).attr('data-f');
 		$('.b-3 .filter li').removeClass('active');
 		$(this).addClass('active');
+		$('.b-3-list').removeClass('active');
+		$(this).parents('.b-block').find(el).addClass('active');
 	});
 
 });

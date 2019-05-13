@@ -14,8 +14,11 @@ $(document).ready(function(){
 	Numbers();
 
 	$('.b-2 .filter li').click(function(){
+		var el = $(this).attr('data-f');
 		$('.b-2 .filter li').removeClass('active');
 		$(this).addClass('active');
+		$('.b-5-wrap').removeClass('active');
+		$(el).addClass('active');
 	});
 
 	$('.radio-list label').click(function(){

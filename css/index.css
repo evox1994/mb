@@ -277,6 +277,12 @@
 	padding: 0 40px;
 	position: relative;
 }
+.b-3-slider-wrap {
+	display: none;
+}
+.b-3-slider-wrap.active {
+	display: block !important;
+}
 .b-3-slider .slick-arrow {
 	position: absolute;
 	top: calc(50% - 5px);
@@ -318,6 +324,7 @@
 	background-image: url('../i/arr-next.svg');
 }
 .b-3-slide {
+	display: block;
 	padding-top: 10px;
 	margin: 0 15px;
 	-webkit-transition: all 0.3s;

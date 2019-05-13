@@ -232,6 +232,12 @@
 	color: rgb(62, 71, 87);
 	border-color: rgb(221, 223, 224);
 }
+.b-3-list {
+	display: none;
+}
+.b-3-list.active {
+	display: block;
+}
 .b-3-list li {
 	display: inline-block;
 	vertical-align: top;

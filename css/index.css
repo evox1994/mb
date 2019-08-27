@@ -324,7 +324,7 @@
 	background-image: url('../i/arr-next.svg');
 }
 .b-3-slide {
-	display: block;
+	display: none;
 	padding-top: 10px;
 	margin: 0 15px;
 	-webkit-transition: all 0.3s;
@@ -335,6 +335,9 @@
 	-moz-transform: scale(0);
 	-ms-transform: scale(0);
 	transform: scale(0);*/
+}
+.b-3-slide.active {
+	display: block;
 }
 /*.b-3-slider.active .b-3-slide {
 	-webkit-transform: scale(1);

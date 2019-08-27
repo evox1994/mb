@@ -41,8 +41,10 @@ $(document).ready(function(){
 		var el = $(this).attr('data-f');
 		$('.b-3 .filter li').removeClass('active');
 		$(this).addClass('active');
-		$('.b-3-slider-wrap').removeClass('active');
-		$(this).parents('.b-block').find(el).addClass('active');
+		$('.b-3-slide').removeClass('active');
+		$('.b-3-slider').slick('slickUnfilter');
+		$('.b-3-slider').find(el).addClass('active');
+		$('.b-3-slider').slick('slickFilter','.active');
 	});
 
 	$('.qwestion').click(function(){

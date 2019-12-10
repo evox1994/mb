@@ -1,3 +1,10 @@
+.header-top {
+	background-color: #ffffff;
+}
+.header-bot {
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #eeeeee;
+}
 .btn {
 	display: block;
 	background-color: #e61739;
@@ -11,6 +18,9 @@
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+}
+.btn:hover {
+	background-color: #c40517;
 }
 .title {
 	display: block;
@@ -40,7 +50,7 @@
 .b-1 .nav span {
 	display: inline-block;
 	vertical-align: middle;
-	padding-left: 18px;
+	padding-left: 14px;
 	margin-left: 10px;
 	position: relative;
 	font-size: 12px;
@@ -62,11 +72,11 @@
 	margin-left: 0;
 }
 .b-1 .nav span::before {
-	content: '>';
+	content: '-';
 	display: block;
 	position: absolute;
 	left: 0;
-	top: calc(50% - 11px);
+	top: calc(50% - 12px);
 	font-size: 16px;
 }
 .b-1 .nav span:first-child:before {
@@ -202,9 +212,9 @@
 }
 .b-2-list .li-title {
 	display: block;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.2;
-	font-family: 'OpenSans-Bold';
+	font-family: 'OpenSans-SemiBold';
 	color: #10101c;
 	margin-bottom: 15px;
 }
@@ -245,7 +255,8 @@
 	width: calc(55% - 15px);
 }
 .b-3 .title {
-	font-size: 24px;
+	font-size: 20px;
+	font-family: 'OpenSans-SemiBold';
 }
 .b-3 .text {
 	display: block;
@@ -300,8 +311,8 @@
 .b-4 .item-title {
 	display: block;
 	line-height: 1.2;
-	font-family: 'OpenSans-Bold';
-	font-size: 24px;
+	font-family: 'OpenSans-SemiBold';
+	font-size: 20px;
 	color: #10101c;
 	margin-bottom: 30px;
 }
@@ -314,8 +325,8 @@
 }
 .b-4 .item ul li .name {
 	display: block;
-	font-size: 20px;
-	font-family: 'OpenSans-Bold';
+	font-size: 16px;
+	font-family: 'OpenSans-SemiBold';
 	line-height: 1.2;
 	color: #10101c;
 	margin-bottom: 5px;
@@ -369,8 +380,8 @@
 .b-5-list li .number span {
 	display: block;
 	color: #10101c;
-	font-size: 30px;
-	font-family: 'OpenSans-Bold';
+	font-size: 20px;
+	font-family: 'OpenSans-Regular';
 	line-height: 1;
 	position: absolute;
 	left: 50%;
@@ -694,14 +705,14 @@
 	margin-top: 10px;
 }
 .b-5 form .button-text a {
-	color: #74a3d2;
+	color: #e61739;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
 .b-5 form .button-text a:hover {
-	color: #000000;
+	color: #c40517;
 }
 .b-5 form .button-text .radio-btn {
 	display: block;
@@ -764,9 +775,9 @@
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
 }
-/*.b-5 form .form-btn:hover {
-	background-color: rgb(225, 191, 25);
-}*/
+.b-5 form .form-btn:hover {
+	background-color: #c40517;
+}
 .b-5 form .form-btn-2 {
 	display: block;
 	max-width: 350px;
@@ -806,7 +817,7 @@
 }
 .b-5 form button:hover {
 	cursor: pointer;
-	/*background-color: rgb(225, 191, 25);*/
+	background-color: #c40517;
 }
 
 .b-6 .b-block {
@@ -842,6 +853,9 @@
 	margin-top: 0;
 }
 .b-6 .wrap ul li a {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
 	color: #10101c;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -850,6 +864,19 @@
 }
 .b-6 .wrap ul li a:hover {
 	color: #e61739;
+}
+.b-6 .wrap ul li a:before {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-image: url('../i/arr-a.svg');
 }
 
 
@@ -1129,6 +1156,13 @@
 	}
 	.b-6 .wrap ul li:nth-child(2) {
 		margin-top: 10px;
+	}
+	.b-6 .wrap ul li a {
+		padding-left: 15px;
+	}
+	.b-6 .wrap ul li a:before {
+		width: 12px;
+		height: 12px;
 	}
 }
 @media screen and (max-width: 550px){
